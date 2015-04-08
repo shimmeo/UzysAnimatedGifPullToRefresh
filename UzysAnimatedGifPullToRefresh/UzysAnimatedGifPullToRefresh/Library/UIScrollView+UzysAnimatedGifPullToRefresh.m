@@ -114,7 +114,7 @@ static char UIScrollViewPullToRefreshView;
     self.pullToRefreshView.landscapeTopInset = lInset;
     
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
-    if(orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown)
+    if(orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown || orientation == UIDeviceOrientationPortraitFaceUp || orientation == UIDeviceOrientationPortraitFaceDown )
     {
         self.pullToRefreshView.originalTopInset = self.pullToRefreshView.portraitTopInset;
     }
